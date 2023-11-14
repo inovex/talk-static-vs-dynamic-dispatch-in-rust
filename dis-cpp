@@ -1,0 +1,57 @@
+
+main-cpp:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+00000000000014ea <_Z22get_double_area_staticI4RectEfRKT_>:
+    14ea:	f3 0f 1e fa          	endbr64 
+    14ee:	55                   	push   rbp
+    14ef:	48 89 e5             	mov    rbp,rsp
+    14f2:	48 83 ec 10          	sub    rsp,0x10
+    14f6:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    14fa:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    14fe:	48 89 c7             	mov    rdi,rax
+    1501:	e8 a8 fe ff ff       	call   13ae <_ZNK4Rect5area2Ev>
+    1506:	f3 0f 58 c0          	addss  xmm0,xmm0
+    150a:	c9                   	leave  
+    150b:	c3                   	ret    
+
+main-cpp:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+000000000000150c <_Z22get_double_area_staticI6CircleEfRKT_>:
+    150c:	f3 0f 1e fa          	endbr64 
+    1510:	55                   	push   rbp
+    1511:	48 89 e5             	mov    rbp,rsp
+    1514:	48 83 ec 10          	sub    rsp,0x10
+    1518:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    151c:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1520:	48 89 c7             	mov    rdi,rax
+    1523:	e8 74 ff ff ff       	call   149c <_ZNK6Circle5area2Ev>
+    1528:	f3 0f 58 c0          	addss  xmm0,xmm0
+    152c:	c9                   	leave  
+    152d:	c3                   	ret    
+
+main-cpp:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000001189 <_Z23get_double_area_dynamicRK5Shape>:
+    1189:	f3 0f 1e fa          	endbr64 
+    118d:	55                   	push   rbp
+    118e:	48 89 e5             	mov    rbp,rsp
+    1191:	48 83 ec 10          	sub    rsp,0x10
+    1195:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1199:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    119d:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    11a0:	48 8b 10             	mov    rdx,QWORD PTR [rax]
+    11a3:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    11a7:	48 89 c7             	mov    rdi,rax
+    11aa:	ff d2                	call   rdx
+    11ac:	f3 0f 58 c0          	addss  xmm0,xmm0
+    11b0:	c9                   	leave  
+    11b1:	c3                   	ret    

@@ -1,0 +1,46 @@
+
+main-rust:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000008b60 <_ZN4main22get_double_area_static17hc62f75f81ef8d34eE>:
+    8b60:	50                   	push   rax
+    8b61:	48 89 3c 24          	mov    QWORD PTR [rsp],rdi
+    8b65:	e8 46 ff ff ff       	call   8ab0 <_ZN42_$LT$main..Rect$u20$as$u20$main..Shape$GT$4area17h1f7b4196afd85d1aE>
+    8b6a:	f3 0f 10 0d 92 44 04 	movss  xmm1,DWORD PTR [rip+0x44492]        # 4d004 <_fini+0xde0>
+    8b71:	00 
+    8b72:	f3 0f 59 c1          	mulss  xmm0,xmm1
+    8b76:	58                   	pop    rax
+    8b77:	c3                   	ret    
+
+main-rust:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000008b80 <_ZN4main22get_double_area_static17hdd9e8eb38f63af2bE>:
+    8b80:	50                   	push   rax
+    8b81:	48 89 3c 24          	mov    QWORD PTR [rsp],rdi
+    8b85:	e8 76 ff ff ff       	call   8b00 <_ZN44_$LT$main..Circle$u20$as$u20$main..Shape$GT$4area17h08d56368d74554d5E>
+    8b8a:	f3 0f 10 0d 72 44 04 	movss  xmm1,DWORD PTR [rip+0x44472]        # 4d004 <_fini+0xde0>
+    8b91:	00 
+    8b92:	f3 0f 59 c1          	mulss  xmm0,xmm1
+    8b96:	58                   	pop    rax
+    8b97:	c3                   	ret    
+
+main-rust:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000008b30 <_ZN4main23get_double_area_dynamic17h70b77052bfb5deafE>:
+    8b30:	48 83 ec 18          	sub    rsp,0x18
+    8b34:	48 89 7c 24 08       	mov    QWORD PTR [rsp+0x8],rdi
+    8b39:	48 89 74 24 10       	mov    QWORD PTR [rsp+0x10],rsi
+    8b3e:	ff 56 18             	call   QWORD PTR [rsi+0x18]
+    8b41:	f3 0f 10 0d bb 44 04 	movss  xmm1,DWORD PTR [rip+0x444bb]        # 4d004 <_fini+0xde0>
+    8b48:	00 
+    8b49:	f3 0f 59 c1          	mulss  xmm0,xmm1
+    8b4d:	48 83 c4 18          	add    rsp,0x18
+    8b51:	c3                   	ret    
