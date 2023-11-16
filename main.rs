@@ -22,7 +22,7 @@ impl Shape for Rect {
 
 impl Shape for Circle {
     fn area(&self) -> f32 {
-        self.radius as f32 * 2.0 * 3.14
+        self.radius as f32 * self.radius as f32 * 3.14
     }
 }
 

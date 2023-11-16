@@ -4,36 +4,36 @@ main-cpp:     file format elf64-x86-64
 
 Disassembly of section .text:
 
-00000000000014ea <_Z22get_double_area_staticI4RectEfRKT_>:
-    14ea:	f3 0f 1e fa          	endbr64 
-    14ee:	55                   	push   rbp
-    14ef:	48 89 e5             	mov    rbp,rsp
-    14f2:	48 83 ec 10          	sub    rsp,0x10
-    14f6:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
-    14fa:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
-    14fe:	48 89 c7             	mov    rdi,rax
-    1501:	e8 a8 fe ff ff       	call   13ae <_ZNK4Rect5area2Ev>
-    1506:	f3 0f 58 c0          	addss  xmm0,xmm0
-    150a:	c9                   	leave  
-    150b:	c3                   	ret    
+00000000000014fa <_Z22get_double_area_staticI4RectEfRKT_>:
+    14fa:	f3 0f 1e fa          	endbr64 
+    14fe:	55                   	push   rbp
+    14ff:	48 89 e5             	mov    rbp,rsp
+    1502:	48 83 ec 10          	sub    rsp,0x10
+    1506:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    150a:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    150e:	48 89 c7             	mov    rdi,rax
+    1511:	e8 98 fe ff ff       	call   13ae <_ZNK4Rect5area2Ev>
+    1516:	f3 0f 58 c0          	addss  xmm0,xmm0
+    151a:	c9                   	leave  
+    151b:	c3                   	ret    
 
 main-cpp:     file format elf64-x86-64
 
 
 Disassembly of section .text:
 
-000000000000150c <_Z22get_double_area_staticI6CircleEfRKT_>:
-    150c:	f3 0f 1e fa          	endbr64 
-    1510:	55                   	push   rbp
-    1511:	48 89 e5             	mov    rbp,rsp
-    1514:	48 83 ec 10          	sub    rsp,0x10
-    1518:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
-    151c:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
-    1520:	48 89 c7             	mov    rdi,rax
-    1523:	e8 74 ff ff ff       	call   149c <_ZNK6Circle5area2Ev>
-    1528:	f3 0f 58 c0          	addss  xmm0,xmm0
-    152c:	c9                   	leave  
-    152d:	c3                   	ret    
+000000000000151c <_Z22get_double_area_staticI6CircleEfRKT_>:
+    151c:	f3 0f 1e fa          	endbr64 
+    1520:	55                   	push   rbp
+    1521:	48 89 e5             	mov    rbp,rsp
+    1524:	48 83 ec 10          	sub    rsp,0x10
+    1528:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    152c:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1530:	48 89 c7             	mov    rdi,rax
+    1533:	e8 6c ff ff ff       	call   14a4 <_ZNK6Circle5area2Ev>
+    1538:	f3 0f 58 c0          	addss  xmm0,xmm0
+    153c:	c9                   	leave  
+    153d:	c3                   	ret    
 
 main-cpp:     file format elf64-x86-64
 

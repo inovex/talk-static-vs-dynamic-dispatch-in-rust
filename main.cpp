@@ -27,8 +27,8 @@ class Circle : public virtual Shape {
 public:
   Circle(uint32_t r) : r_(r) {}
 
-  float area() const override { return 2 * r_ * 3.14f; }
-  float area2() const { return 2 * r_ * 3.14f; }
+  float area() const override { return r_ * r_ * 3.14f; }
+  float area2() const { return r_ * r_ * 3.14f; }
 
 private:
   uint32_t r_;
